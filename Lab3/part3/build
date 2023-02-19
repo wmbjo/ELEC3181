@@ -1,0 +1,2 @@
+as -o addsadcexamp.o addsadcexamp.s
+ld -o addsadcexamp addsadcexamp.o

@@ -8,7 +8,7 @@
 @ and then call Linux to do it.
 _start: mov R0, #1 @ 1 = StdOut
  ldr R1, =helloworld @ string to print
- mov R2, #13 @ length of our string
+ mov R2, #32 @ length of our string
  mov R7, #4 @ linux write system call
  svc 0 @ Call linux to print
 @ Set up the parameters to exit the program 
@@ -18,4 +18,4 @@ _start: mov R0, #1 @ 1 = StdOut
  mov R7, #1  @ Service command code 1
           @ terminates this program
  svc 0         @ Call linux to terminate
-helloworld: .ascii "Hello World!\n"
+helloworld: .ascii "Hello Will Bjorndahl (makefile)\n"
