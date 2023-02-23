@@ -2,9 +2,9 @@
 .global _start       @ Provide program starting address
 
 _start:    MOV   R3, #0xFFFF     
-      MOVT R3, #0x7FFF
+      MOVT R3, #0xFFFF
 
-      MOV  R2, #0x1839
+      MOV  R2, #0x3839
       MOVT  R2, #0x4853
 
       ADDS R1, R3, R2      @ Lower order word
